@@ -1,0 +1,259 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+
+/* Create Variables */
+:root{
+    --primary : #885bf5; 
+    --secondary : #461baa; 
+}
+
+
+
+
+/* Scrollbar */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+
+
+/* Initializing Main Color Scheme with CSS variables */
+
+.text-primary{
+    color: var(--primary) !important;
+}
+
+.btn-primary{
+  border: 1px solid var(--primary);
+    background-color: var(--primary) !important;
+}
+
+.btn-primary:hover{
+    border: 1px solid var(--primary);
+    background-color: transparent !important;
+    color: var(--primary);
+}
+
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+
+.bg-primary-gradient {
+  background-image: linear-gradient(to bottom, var(--primary), var(--secondary)) !important;
+}
+
+
+.btn-outline-primary{
+    border: 1px solid var(--primary);
+    color: var(--primary)
+}
+
+.btn-outline-primary:hover{
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+}
+
+.border-primary{
+  border: 1px solid var(--primary) !important;
+}
+
+
+
+/* Navbar Css Section */
+
+.active-nav{
+
+    color: var(--primary);
+    position: relative;
+
+}
+
+.active-nav::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.brand-title{
+    font-weight: bold;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+
+
+
+/* Page Title */
+
+.page-title{
+    font-weight: bold;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+
+
+/* Hero Section CSS */
+
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.hero-section-sides {
+  flex-basis: 50%;
+}
+
+.hero-title {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.hero-title img {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.hero-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn-hero {
+  margin-right: 20px;
+}
+
+.btn-hero i {
+  margin-left: 5px;
+}
+
+
+
+/* Featuer Section */
+
+.feature-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+/* BMI Section */
+
+#bmi-input::placeholder{
+  color: rgba(255, 255, 255, 0.444);
+}
+
+
+
+
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 1000px) {
+  
+
+/* Start Hero Section */
+  
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30%;
+  height: 100%;
+}
+
+.hero-section-sides {
+  flex-basis: 100%;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Nanum Myeongjo', serif;
+  text-align: center;
+}
+
+
+.hero-title img {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.hero-description {
+  font-size: 12px;
+  margin-bottom: 30px;
+  text-align: center
+}
+
+.btn-hero-top,.btn-scheduale {
+  display: none;
+  margin-right: 20px;
+}
+
+
+/* End Hero Section */
+
+
+
+/* Featured Section */
+
+.feature-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.feature-image{
+  display: none;
+}
+
+.main-feature-description{
+  width: 80% !important;
+}
+
+
+
+/* Accordian */
+
+.accordion-item{
+  border: 1px solid var(--primary) !important;
+  margin-bottom: 10px !important;
+}
+
+.accordion-button:active{
+  box-shadow: 0 !important;
+  background-color: transparent !important;
+}
+
+}
